@@ -70,11 +70,38 @@ nav {
 }
 .bio {
     float:left;
+    text-align: center;
+    background: url(../img/orange_line.jpg) 50% 30% no-repeat;
 }
 
 .bio h2 {
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align:center;
+    margin: 100px 0px 0px 0px;
+}
+
+.mini-photo {
+    margin-top: 80px;
     
 }
+
+.bio p {
+    margin-top: 25px;
+}
+
+.bio input {
+    height: 36px;
+    text-align: center;
+    border: 2px solid #6d7682;
+    background: none;
+    border-radius: 5px;
+    color: #6d7682;
+    font-size: 13px;
+    padding: 0px 16px;
+    margin-top: 40px;
+}
+
 .skills {
     float:left;
 }
