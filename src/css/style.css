@@ -41,20 +41,40 @@ nav {
 
 .title__container {
     float:left;
-    margin: 432px 0px 0px 404px;
+    margin: 306px 0px 0px 287px;
     color: #2c384a;
     text-align: center;
 }
 
 .title__container h1 {
-    font-size 60px;
+    font-size: 40px;
     font-weight: bold;
 }
 
+.title__container h4 {
+    margin-top: 40px;
+    font-size: 22px;
+    color: #79818d;
+}
+
+.title__container input {
+    height: 40px;
+    text-align: center;
+    border: 2px solid #6d7682;
+    background: none;
+    border-radius: 5px;
+    color: #6d7682;
+    font-size: 13px;
+    padding: 0px 16px;
+    margin: 58px 14px 0px 14px;
+}
 .bio {
     float:left;
 }
 
+.bio h2 {
+    
+}
 .skills {
     float:left;
 }
