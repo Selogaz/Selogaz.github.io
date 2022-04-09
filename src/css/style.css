@@ -36,7 +36,7 @@ nav {
 .main {
     width: 100%;
     height: calc(100% - 60px);
-    background: url(../img/boy.png) right/40% no-repeat, url(../img/bg.jpg) center/cover no-repeat;
+    background: url(../img/boy.png) 90% 100%/auto 85% no-repeat, url(../img/bg.jpg) center/cover no-repeat;
 }
 
 .title__container {
