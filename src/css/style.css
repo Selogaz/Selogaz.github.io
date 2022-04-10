@@ -106,17 +106,29 @@ nav {
     float:left;
     width: 100%;
     text-align: center;
-    background: url(../img/orange_line.jpg) 50% 30% no-repeat, url(../img/background.jpg);
-    background: ;
+    background: url(../img/orange_line.jpg) 50% 25% no-repeat, url(../img/background.jpg) no-repeat;
 }
 
 .skills h2 {
     font-size: 22px;
     text-transform: uppercase;
     text-align:center;
-    margin: 100px 0px 0px 0px;
+    margin: 100px 0px 140px 0px;
 }
 
+.skills h4 {
+    color: #cf7600;
+}
+
+skill-icons {
+    margin-left:120px;
+}
+
+.skill-icons li {
+    float: left;
+    margin: 0px 60px 0px 60px;
+    
+}
 .experience {
     float: left;
 }
