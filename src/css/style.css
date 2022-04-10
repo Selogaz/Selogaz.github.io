@@ -104,6 +104,17 @@ nav {
 
 .skills {
     float:left;
+    width: 100%;
+    text-align: center;
+    background: url(../img/orange_line.jpg) 50% 30% no-repeat, url(../img/background.jpg);
+    background: ;
+}
+
+.skills h2 {
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align:center;
+    margin: 100px 0px 0px 0px;
 }
 
 .experience {
