@@ -127,7 +127,7 @@ nav {
 }
 .experience {
     float: left;
-    background: url(../img/orange_line.jpg) 50% 40% no-repeat;
+    background: url(../img/orange_line.jpg) 50% 4% no-repeat;
     margin: 100px 0px 0px 0px;
 }
 
@@ -135,6 +135,12 @@ nav {
     font-size: 22px;
     text-transform: uppercase;
     text-align:center;
+    margin-bottom: 70px;
+}
+
+.experience p {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .statistics {
