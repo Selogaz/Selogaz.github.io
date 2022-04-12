@@ -71,7 +71,7 @@ nav {
 .bio {
     float:left;
     text-align: center;
-    background: url(../img/orange_line.jpg) 50% 30% no-repeat;
+    background: url(../img/orange_line.jpg) 50% 23% no-repeat;
 }
 
 .bio h2 {
@@ -100,6 +100,7 @@ nav {
     font-size: 13px;
     padding: 0px 16px;
     margin-top: 40px;
+    margin-bottom: 100px;
 }
 
 .skills {
@@ -127,7 +128,7 @@ nav {
 }
 .experience {
     float: left;
-    background: url(../img/orange_line.jpg) 50% 4% no-repeat;
+    background: url(../img/orange_line.jpg) 50% 3% no-repeat;
     margin: 100px 0px 0px 0px;
 }
 
@@ -138,13 +139,60 @@ nav {
     margin-bottom: 70px;
 }
 
-.experience p {
+.exp_main_p {
     text-align: center;
     margin-bottom: 30px;
 }
 
+.experience input {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    background-color: #63b5ae;
+    color: #fff;
+    padding: 10px 35px 10px 35px;
+    border-radius: 5% 5%;
+    margin-top: 20px;
+}
+
+.experience h4 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.exp_client {
+    float:left;
+    margin-top: 20px;
+}
+
+.exp_name_client {
+    float: left;
+}
+
+.exp_name_work {
+    margin-left: 400px;
+    margin-top: 20px;
+}
+
+.exp_desc {
+    margin-left: 400px;
+}
+
 .statistics {
     float:left;
+}
+
+.statistics h2 {
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align:center;
+    margin-bottom: 70px;
+}
+
+.stat_li li{
+    float: left;
 }
 
 .calculates {
