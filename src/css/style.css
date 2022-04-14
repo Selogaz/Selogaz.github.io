@@ -214,6 +214,31 @@ nav {
 
 .calculates {
     float: left;
+    width: 100%;
+}
+
+.calculates h2 {
+     font-size: 22px;
+    text-transform: uppercase;
+    text-align:center;
+    margin: 100px 0px 60px 0px;
+}
+
+.calculates h3 {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+
+.calculates select {
+    background: #eeeeee;
+    width: 631px;
+    padding: 15px 0px 15px 0px;
+}
+
+.calculates span {
+    float: left;
 }
 
 .contacts {
