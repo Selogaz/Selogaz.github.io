@@ -218,14 +218,13 @@ nav {
 }
 
 .calculates h2 {
-     font-size: 22px;
-    text-transform: uppercase;
+    font-size: 22px;
     text-align:center;
     margin: 100px 0px 60px 0px;
 }
 
 .calculates h3 {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
     line-height: 60px;
     text-transform: uppercase;
@@ -237,12 +236,50 @@ nav {
     padding: 15px 0px 15px 0px;
 }
 
+.calculates h4 {
+    display: inline;
+    line-height: 30px;
+    font-weight: bold;
+}
+
 .calculates span {
-    float: left;
+    margin-left: 545px;
+}
+
+.calculates .zero {
+    margin-left: 578px;
 }
 
 .contacts {
     float: left;
+    width: 100%;
+    background: url(../img/orange_line.jpg) 50% 32% no-repeat, url(../img/contacts.jpg) 100% 10%/auto 95% no-repeat;
+    margin: 0px 0px 0px 0px;
+}
+
+.contacts h2 {
+    font-size: 22px;
+    text-align:center;
+    text-transform: uppercase;
+    margin: 100px 0px 60px 0px;
+}
+
+.contacts p {
+    padding-top: 17px;
+}
+
+.contacts>p {
+    text-align: center;
+}
+
+.contacts ul {
+    margin: 30px 0px 0px 467px;
+    text-align: center;
+}
+
+.contacts li {
+    float: left;
+    margin-right: 100px;
 }
 
 footer {
