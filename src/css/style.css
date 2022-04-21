@@ -276,16 +276,10 @@ nav {
     margin: 100px 0px 60px 0px;
 }
 
-.contacts_wrapper {
-    float: left;
-    text-align: center;
-    margin: 20px 0px 0px 320px;
-}
-
 .contacts h4 {
     text-transform: uppercase;
     text-align: center;
-    margin: 0px 70px 0px 0px;
+    margin: 110px 0px 30px 0px;
 }
 
 .contacts p {
@@ -306,11 +300,22 @@ nav {
     margin-right: 100px;
 }
 
-
-
 .contacts textarea {
     float: left;
     margin: 30px 0px 0px 100px;
+}
+
+.send {
+    margin: 150px 450px 0px 0px;
+}
+
+.contacts input {
+    float: left;
+    margin-right: 10px;
+}
+
+.contacts_wrapper {
+    margin-left: 500px;
 }
 
 footer {
