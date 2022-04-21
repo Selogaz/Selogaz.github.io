@@ -265,7 +265,7 @@ nav {
 .contacts {
     float: left;
     width: 100%;
-    background: url(../img/orange_line.jpg) 50% 32% no-repeat, url(../img/contacts.jpg) 100% 100%/auto no-repeat;
+    background: url(../img/orange_line.jpg) 50% 24% no-repeat, url(../img/contacts.jpg) 50% 100% no-repeat;
     color: #fff;
 }
 
@@ -273,7 +273,7 @@ nav {
     font-size: 22px;
     text-align:center;
     text-transform: uppercase;
-    margin: 100px 0px 60px 0px;
+    margin: 100px 0px 50px 0px;
 }
 
 .contacts h4 {
@@ -302,20 +302,30 @@ nav {
 
 .contacts textarea {
     float: left;
-    margin: 30px 0px 0px 100px;
-}
-
-.send {
-    margin: 150px 450px 0px 0px;
+    padding: 5px 5px 5px 5px;
+    margin: 10px 550px 0px 0px;
+    background-color: #d3d7dd;
 }
 
 .contacts input {
     float: left;
     margin-right: 10px;
+    padding: 5px 65px 5px 5px;
+    background-color: #d3d7dd;
 }
 
+.contacts .send {
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px #fff solid;
+    padding: 10px 10px 10px 10px;
+    margin: 20px 0px 150px 630px;
+}
+
+
 .contacts_wrapper {
-    margin-left: 500px;
+    margin-left: 440px;
 }
 
 footer {
