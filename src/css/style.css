@@ -73,6 +73,7 @@ nav {
     float:left;
     text-align: center;
     background: url(../img/orange_line.jpg) 50% 23% no-repeat;
+    margin-top: 20px;
 }
 
 .bio h2 {
@@ -275,6 +276,18 @@ nav {
     margin: 100px 0px 60px 0px;
 }
 
+.contacts_wrapper {
+    float: left;
+    text-align: center;
+    margin: 20px 0px 0px 320px;
+}
+
+.contacts h4 {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0px 70px 0px 0px;
+}
+
 .contacts p {
     padding-top: 17px;
 }
@@ -293,8 +306,11 @@ nav {
     margin-right: 100px;
 }
 
-.contacts_wrapper {
+
+
+.contacts textarea {
     float: left;
+    margin: 30px 0px 0px 100px;
 }
 
 footer {
