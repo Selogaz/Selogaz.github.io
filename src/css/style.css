@@ -134,6 +134,10 @@ nav {
     margin: 100px 0px 0px 0px;
 }
 
+.gallery-photo {
+    padding: 0px 0px 0px 200px;
+}
+
 .experience h2 {
     font-size: 22px;
     text-transform: uppercase;
