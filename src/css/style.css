@@ -69,6 +69,7 @@ nav {
     margin: 58px 14px 0px 14px;
 }
 .bio {
+    width: 100%;
     float:left;
     text-align: center;
     background: url(../img/orange_line.jpg) 50% 23% no-repeat;
@@ -180,6 +181,11 @@ nav {
     margin-left: 400px;
 }
 
+.exp_wrapper {
+    float: left;
+    margin-left: 200px;
+}
+
 .statistics {
     width: 100%;
     height: 500px;
@@ -217,10 +223,15 @@ nav {
     width: 100%;
 }
 
+.calc_wrapper {
+    margin: 0px 0px 100px 330px;
+}
+
 .calculates h2 {
     font-size: 22px;
+    font-weight: bold;
     text-align:center;
-    margin: 100px 0px 60px 0px;
+    margin: 100px 0px 20px 0px;
 }
 
 .calculates h3 {
@@ -253,8 +264,8 @@ nav {
 .contacts {
     float: left;
     width: 100%;
-    background: url(../img/orange_line.jpg) 50% 32% no-repeat, url(../img/contacts.jpg) 100% 10%/auto 95% no-repeat;
-    margin: 0px 0px 0px 0px;
+    background: url(../img/orange_line.jpg) 50% 32% no-repeat, url(../img/contacts.jpg) 100% 100%/auto no-repeat;
+    color: #fff;
 }
 
 .contacts h2 {
@@ -280,6 +291,10 @@ nav {
 .contacts li {
     float: left;
     margin-right: 100px;
+}
+
+.contacts_wrapper {
+    float: left;
 }
 
 footer {

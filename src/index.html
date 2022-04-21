@@ -43,8 +43,8 @@
         <div class="bio">
             <h2>Обо мне</h2>
             <img class ="mini-photo" src="img/mini.jpg" alt="Фото-миниатюра автора">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit optio quaerat laborum aspernatur, odit maxime iste ullam a esse quasi asperiores sapiente facilis molestias voluptas non velit id ex fuga?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur ea repudiandae sequi dolore possimus quae, nam eius placeat quisquam voluptate. Nulla perspiciatis, soluta recusandae libero ullam officia consequatur facilis, ut?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit optio quaerat laborum aspernatur, odit maxime <br>iste ullam a esse quasi asperiores sapiente facilis molestias voluptas non velit id ex fuga?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur ea repudiandae sequi dolore possimus quae, nam<br> eius placeat quisquam voluptate. Nulla perspiciatis, soluta recusandae libero ullam officia consequatur facilis, ut?</p>
             <input type="submit" value="Скачать резюме">
         </div>
         <div class="skills">
@@ -74,22 +74,25 @@
             <div class="gallery-container">
                 <figure class="gallery-content">
                     <a href="#"></a><img class="gallery-photo" src="img/Barbershop.jpg" alt="Сайт барбершопа Бородинский">
-                    <h4 class="exp_client">КЛИЕНТ:</h4>
-                    <h4 class="exp_name_work">Барбершоп Бородинский</h4>
-                    <p class="exp_name_client">HTML Academy</p>
-                    <p class="exp_desc">Учебный проект в рамках курса по фронтенд разработке в HTML Academy</p>
-                    <h4>САЙТ:</h4>
-                    <a href="#">Барбершоп Бородинский</a>
-                    <input type="submit" value="VISIT LIVE SITE">
-                    
+                    <div class="exp_wrapper">
+                        <h4 class="exp_client">КЛИЕНТ:</h4>
+                        <h4 class="exp_name_work">Барбершоп Бородинский</h4>
+                        <p class="exp_name_client">HTML Academy</p>
+                        <p class="exp_desc">Учебный проект в рамках курса по фронтенд разработке в HTML Academy</p>
+                        <h4>САЙТ:</h4>
+                        <a href="#">Барбершоп Бородинский</a>
+                        <input type="submit" value="VISIT LIVE SITE">
+                    </div>
                     <a href="#"></a><img class="gallery-photo" src="img/homes1.jpg" alt="Сайт строительной компании">
-                    <h4 class="exp_client">КЛИЕНТ:</h4>
-                    <h4 class="exp_name_work">Каменные дома</h4>
-                    <p class="exp_name_client">Строительная компания</p>
-                    <p class="exp_desc">Сайт для строительной компании. Выполнен на конструкторе сайтов Tilda</p>
-                    <h4>САЙТ:</h4>
-                    <a>https://xn----7sbnofunkkkl6e.xn--p1ai/</a>
-                    <a href="https://xn----7sbnofunkkkl6e.xn--p1ai/"><input type="submit" value="VISIT LIVE SITE"></a>
+                    <div class="exp_wrapper">
+                        <h4 class="exp_client">КЛИЕНТ:</h4>
+                        <h4 class="exp_name_work">Каменные дома</h4>
+                        <p class="exp_name_client">Строительная компания</p>
+                        <p class="exp_desc">Сайт для строительной компании. Выполнен на конструкторе сайтов Tilda</p>
+                        <h4>САЙТ:</h4>
+                        <a>https://xn----7sbnofunkkkl6e.xn--p1ai/</a>
+                        <a href="https://xn----7sbnofunkkkl6e.xn--p1ai/"><input type="submit" value="VISIT LIVE SITE"></a>
+                    </div>
                 </figure>
                 <!--<button class="button gallery-button gallery-button-back" disabled>Назад</button>
                 <button class="button gallery-button gallery-button-next">Вперед</button>-->
@@ -116,41 +119,43 @@
         </div>
         <div class="calculates">
             <h2>Расчет стоимости</h2>
-            <h3>Тип сайта</h3>
-            <select name="list" id="list">
-                <option selected>Выберите пункт...</option>
-                <option value="Call">Помочь с выбором...</option>
-                <option value="Сайт-визитка">Сайт-визитка</option>
-                <option value="Корпоративный сайт">Корпоративный сайт</option>
-                <option value="Лендинг">Лендинг</option>
-                <option value="Интернет-витрина">Интернет-витрина</option>
-                <option value="Интернет-магазин">Интернет-магазин</option>
-                <option value="Новостной сайт">Новостной сайт</option>
-                <option value="Тематический сайт">Тематический сайт</option>
-                <option value="Блог">Блог</option>
-                <option value="Сайт-справочник">Сайт-справочник</option>
-                <option value="Веб-сервис">Веб-сервис</option>
-            </select>
-            <h3>Дизайн</h3>
-            <select name="list2" id="list2">
-                <option selected>Выберите пункт...</option>
-                <option value="">Строгий</option>
-                <option value="">Классический</option>
-                <option value="">Яркий</option>
-                >
-            </select>
-            <h3>Адаптивность</h3>
-            <select name="list3" id="list3">
-                <option selected>Выберите пункт...</option>
-                <option value="All">Все устройства</option>
-                <option value="ПК и мобильные">ПК и мобильные устройства</option>
-                <option value="Только мобильные">Только мобильные</option>
-                <option value="Только ПК">Только ПК</option>
-            </select>
-            <h4><br>Сроки</h4>
-            <span class="zero">0<br></span>
-            <h4>Стоимость</h4>
-            <span>0</span>
+            <div class="calc_wrapper">
+                <h3>Тип сайта</h3>
+                <select name="list" id="list">
+                    <option selected>Выберите пункт...</option>
+                    <option value="Call">Помочь с выбором...</option>
+                    <option value="Сайт-визитка">Сайт-визитка</option>
+                    <option value="Корпоративный сайт">Корпоративный сайт</option>
+                    <option value="Лендинг">Лендинг</option>
+                    <option value="Интернет-витрина">Интернет-витрина</option>
+                    <option value="Интернет-магазин">Интернет-магазин</option>
+                    <option value="Новостной сайт">Новостной сайт</option>
+                    <option value="Тематический сайт">Тематический сайт</option>
+                    <option value="Блог">Блог</option>
+                    <option value="Сайт-справочник">Сайт-справочник</option>
+                    <option value="Веб-сервис">Веб-сервис</option>
+                </select>
+                <h3>Дизайн</h3>
+                <select name="list2" id="list2">
+                    <option selected>Выберите пункт...</option>
+                    <option value="">Строгий</option>
+                    <option value="">Классический</option>
+                    <option value="">Яркий</option>
+                    >
+                </select>
+                <h3>Адаптивность</h3>
+                <select name="list3" id="list3">
+                    <option selected>Выберите пункт...</option>
+                    <option value="All">Все устройства</option>
+                    <option value="ПК и мобильные">ПК и мобильные устройства</option>
+                    <option value="Только мобильные">Только мобильные</option>
+                    <option value="Только ПК">Только ПК</option>
+                </select>
+                <h4><br>Сроки</h4>
+                <span class="zero">0<br></span>
+                <h4>Стоимость</h4>
+                <span>0</span>
+            </div>
         </div>
         <div class="contacts">
             <h2>Мои контакты</h2>
@@ -161,11 +166,13 @@
                 <li><img src="img/ring.png"  alt="Телефон">
                 <p>+79782440204</p></li>
             </ul>
-            <h4>Оставьте мне сообщение</h4>
-            <input type="text" placeholder="Ваше имя" name="Имя">
-            <input type="text" Placeholder="Почта" name="Почта">
-            <textarea name="Сообщение" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
-            <input type="submit" value="Отправить">
+            <div class="contacts_wrapper">
+                <h4>Оставьте мне сообщение</h4>
+                <input type="text" placeholder="Ваше имя" name="Имя">
+                <input type="text" Placeholder="Почта" name="Почта">
+                <textarea name="Сообщение" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
+                <input type="submit" value="Отправить">
+            </div>
         </div>
     </div>
     <footer>
