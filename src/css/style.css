@@ -139,8 +139,12 @@ main {
     width: 100%;
     float:left;
     text-align: center;
-    background: url(../img/orange_line.jpg) 50% 23% no-repeat;
+    background: url(../img/orange_line.jpg) 50% 27% no-repeat;
     margin-top: 20px;
+    opacity: 0;
+    -webkit-animation: comming 2s ease forwards;
+    -o-animation: comming 2s ease forwards;
+    animation: comming 2s ease forwards;
 }
 
 .bio h2 {
@@ -148,7 +152,7 @@ main {
     font-size: 22px;
     text-transform: uppercase;
     text-align:center;
-    margin: 100px 0px 0px 0px;
+    margin: 150px 0px 0px 0px;
 }
 
 .mini-photo {
