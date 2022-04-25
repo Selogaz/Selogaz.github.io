@@ -15,6 +15,7 @@
     <title>Александр Терентьев - Веб-разработчик</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.min.css">
 </head>
 
 <body>
@@ -25,20 +26,23 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li>Обо мне</li>
-                    <li>Что я умею</li>
-                    <li>Мои работы</li>
-                    <li>Контакты</li>
+                    <li><a href="#">Обо мне</a></li>
+                    <li><a href="#">Что я умею</a></li>
+                    <li><a href="#">Мои работы</a></li>
+                    <li><a href="#">Прайс</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <!--<li><a href="#">Контакты</a></li>-->
                 </ul>
             </div>
         </nav>
     </header>
-    <div class="main">
+    <main>
+    <section class="main">
         <div class="title__container">
             <h1>Привет <br>Я - Александр Терентьев</h1>
             <h4>Веб-разрабочик</h4>
-            <input type="submit" value="Обо мне">
-            <input type="submit" value="Мои работы">
+            <input type="button" value="Обо мне">
+            <input type="button" value="Мои работы">
         </div>
         <div class="bio">
             <h2>Обо мне</h2>
@@ -180,10 +184,11 @@
                 </div>
                 <input class="send" type="submit" value="Отправить">
         </div>
-    </div>
+    </section>
     <div class="map">
         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7759b74298cf548dcb8083c79756efd550c165131f6dbbff625369e3c7cf8ece&amp;source=constructor" width="1348" height="400" frameborder="0"></iframe>
     </div>
+    </main>
     <footer>
         <!--<ul>
             <li><a href="+79782440204"><img src="img/index-svg-phone.svg" alt="Иконка звонка" width="27" height="43"></a></li>
