@@ -453,7 +453,7 @@ main {
 }
 
 .contacts .send:active {
-    transform: scale(1.1);
+    animation: bounceOut 0.7s linear infinite;
 }
 
 .contacts_wrapper {
