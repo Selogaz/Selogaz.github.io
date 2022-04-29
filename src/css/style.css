@@ -447,6 +447,14 @@ main {
     margin: 20px 0px 150px 630px;
 }
 
+.contacts .send:hover {
+    color: white;
+    background-color: #344051;
+}
+
+.contacts .send:active {
+    transform: scale(1.1);
+}
 
 .contacts_wrapper {
     margin-left: 440px;
