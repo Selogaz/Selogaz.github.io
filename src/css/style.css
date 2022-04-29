@@ -175,6 +175,17 @@ main {
     padding: 0px 16px;
     margin-top: 40px;
     margin-bottom: 100px;
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.bio input:hover {
+    color: white;
+    background-color: #344051;
+}
+
+.bio input:active {
+    transform: scale(1.1);
 }
 
 .skills {
@@ -234,6 +245,10 @@ main {
     padding: 10px 35px 10px 35px;
     border-radius: 5% 5%;
     margin-top: 20px;
+}
+
+.experience input:hover {
+    animation: heartBeat 2s linear infinite ;
 }
 
 .experience h4 {
