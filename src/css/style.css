@@ -416,6 +416,14 @@ main {
     margin-right: 100px;
 }
 
+.phone:hover {
+    animation: heartBeat 2s linear infinite;
+}
+
+.mail:hover {
+    animation: shakeY 2s linear infinite;
+}
+
 .contacts textarea {
     float: left;
     padding: 5px 5px 5px 5px;
