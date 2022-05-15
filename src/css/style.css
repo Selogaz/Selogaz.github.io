@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'FranklinGot';
+    src: url('../fonts/framd.eot');
+    src: url('../fonts/framd.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/framd.woff2') format('woff2'),
+         url('../fonts/framd.woff') format('woff'),
+         url('../fonts/framd.ttf')  format('truetype'),
+         url('../fonts/framd.svg#Franklin Gothic Medium') format('svg');
+}
+
+.custom-css{
+    font-size: 80px;
+}
+
 body{
     font-family: Arial, sans-serif;
 }
@@ -39,6 +53,7 @@ nav {
     -webkit-animation: comming 2s ease;
     -o-animation: comming 2s ease;
     animation: comming 2s ease;
+    font-family: 'FranklinGot', sans-serif;
 }
 .logo a {
     color: #fff;
