@@ -48,7 +48,6 @@ nav {
     color: #fff;
     font-size: 28px;
     line-height: 60px;
-    padding-left: 88px;
     float:left;
     -webkit-animation: comming 2s ease;
     -o-animation: comming 2s ease;
@@ -61,7 +60,6 @@ nav {
 
 .menu {
     float: left;
-    padding-left: 132px;
 }
 
 .menu li{
@@ -566,4 +564,8 @@ footer {
     100% {
         transform: rotateY(180deg);
     }
+}
+
+.icon-code-custom {
+    font-size:40px;
 }
