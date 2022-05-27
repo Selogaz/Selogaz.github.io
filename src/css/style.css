@@ -46,7 +46,7 @@ nav {
 
 .logo {
     color: #fff;
-    font-size: 28px;
+    font-size: 22px;
     line-height: 60px;
     float:left;
     -webkit-animation: comming 2s ease;
@@ -58,6 +58,10 @@ nav {
     color: #fff;
 }
 
+.logo a:hover {
+    color:white;
+}
+
 .menu {
     float: left;
 }
@@ -67,7 +71,7 @@ nav {
     line-height: 60px;
     color: #fff;
     margin-right: 40px;
-    font-size: 16px;
+    font-size: 13px;
     text-transform: uppercase;
     -webkit-animation: topshift 0.4s ease forwards;
     -o-animation: topshift 0.4s ease forwards;
