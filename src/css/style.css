@@ -130,6 +130,7 @@ main {
 
 .title__container {
     float:left;
+    width: 100%;
     color: #2c384a;
     text-align: center;
     opacity: 0;
@@ -142,6 +143,7 @@ main {
 }
 
 .title__container h1 {
+    font-family: Arial, sans-serif;
     font-size: 40px;
     font-weight: bold;
 }
