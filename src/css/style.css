@@ -130,7 +130,6 @@ main {
 
 .title__container {
     float:left;
-    margin: 306px 0px 0px 287px;
     color: #2c384a;
     text-align: center;
     opacity: 0;
@@ -574,4 +573,8 @@ footer {
 
 .icon-code-custom {
     font-size:40px;
+}
+
+.white-btn:visited {
+    color: white;
 }
