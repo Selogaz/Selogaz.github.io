@@ -42,6 +42,7 @@ nav {
     height: 60px;
     background: #344051;
     position: fixed;
+    z-index: 10;
 }
 
 .logo {
@@ -580,3 +581,25 @@ footer {
 .white-btn:visited {
     color: white;
 }
+
+@media (max-width: 991px) {
+    .title__container, .title__container>h4, .title__container input {
+        color: white;
+        position: relative;
+        z-index: 3;
+    }
+    .main {
+        position: relative;
+    }
+    .title__container input {
+        border: 2px solid #fff;
+    }
+    .main::after {
+        content:"";
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        position: absolute;
+        background: rgba(0,0,0,0.4);
+    }
