@@ -259,7 +259,7 @@ main {
     width: 100%;
     float: left;
     background: url(../img/orange_line.jpg) 50% 3% no-repeat;
-    margin: 100px 0px 0px 0px;
+    margin: 100px 0px 100px 0px;
 }
 
 .gallery-photo {
@@ -374,15 +374,15 @@ main {
 }
 
 .calculates h2 {
-    font-size: 22px;
+    font-size: 34px;
     font-weight: bold;
     text-align:center;
-    margin: 100px 0px 20px 0px;
+    margin: 20px 0px 20px 0px;
 }
 
 .calculates label {
     display: block;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
     line-height: 60px;
     text-transform: uppercase;
@@ -390,7 +390,7 @@ main {
 
 .calculates select {
     background: #eeeeee;
-    width: 570px;
+    width: 900px;
     padding: 15px 0px 15px 0px;
 }
 
@@ -422,8 +422,7 @@ main {
 .calculates .shadow {
     position: absolute;    
     border: 1px solid rgba(0,0,0,0.5);
-    width: 700px;
-    height: 680px;
+    height: 760px;
     left:170px;
     opacity: 0.5;
 }
