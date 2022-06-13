@@ -256,13 +256,14 @@ main {
     
 }
 .experience {
+    width: 100%;
     float: left;
     background: url(../img/orange_line.jpg) 50% 3% no-repeat;
     margin: 100px 0px 0px 0px;
 }
 
 .gallery-photo {
-    padding: 0px 0px 0px 200px;
+    /*padding: 0px 0px 0px 200px;*/
 }
 
 .experience h2 {
@@ -271,6 +272,7 @@ main {
     text-transform: uppercase;
     text-align:center;
     margin-bottom: 70px;
+    width:100%;
 }
 
 .exp_main_p {
@@ -288,6 +290,10 @@ main {
     padding: 10px 35px 10px 35px;
     border-radius: 5% 5%;
     margin-top: 20px;
+}
+
+.experience a {
+    text-decoration: none;
 }
 
 .experience input:hover {
@@ -320,7 +326,7 @@ main {
 
 .exp_wrapper {
     float: left;
-    margin-left: 200px;
+    /*margin-left: 200px;*/
 }
 
 .statistics {
@@ -399,7 +405,7 @@ main {
 }
 
 .calculates .zero {
-    margin-left: 578px;
+    margin-left: 501px;
 }
 
 .reviews {
