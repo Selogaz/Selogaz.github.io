@@ -401,11 +401,31 @@ main {
 }
 
 .calculates span {
-    /*margin-left: 545px;*/
+    font-weight: bold;
+    font-size: 16px;
 }
 
-.calculates .zero {
-    /*margin-left: 501px;*/
+.calculates input {
+    display: block;
+    background-color: #63b5ae;
+    color: #fff;
+    padding: 10px 35px 10px 35px;
+    border-radius: 5% 5%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.calculates a {
+    text-decoration: none;
+}
+
+.calculates .shadow {
+    position: absolute;    
+    border: 1px solid rgba(0,0,0,0.5);
+    width: 700px;
+    height: 680px;
+    left:170px;
+    opacity: 0.5;
 }
 
 .reviews {
@@ -616,23 +636,14 @@ footer {
         }
     }
     
-    @media (max-width: 1200px) {
-        .calculates span {
-            margin-left: 0px;
-        }
-    }
-    
-    @media (min-width: 1200px) {
-        .calclulates span {
-            margin-left: 545px;
-        }
-        .calculates .zero {
-            margin-left: 501px;
-        }
-    }
-    
     @media (max-width: 991px) {
         .calculates select {
             width: 547px;
+        }
+    }
+    
+    @media (min-width: 1400px) {
+        .calculates select {
+            width: 557px;
         }
     }
