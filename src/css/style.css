@@ -390,7 +390,7 @@ main {
 
 .calculates select {
     background: #eeeeee;
-    width: 631px;
+    width: 570px;
     padding: 15px 0px 15px 0px;
 }
 
@@ -401,11 +401,11 @@ main {
 }
 
 .calculates span {
-    margin-left: 545px;
+    /*margin-left: 545px;*/
 }
 
 .calculates .zero {
-    margin-left: 501px;
+    /*margin-left: 501px;*/
 }
 
 .reviews {
@@ -608,4 +608,31 @@ footer {
         right:0;
         position: absolute;
         background: rgba(0,0,0,0.4);
+    }
+    
+    @media (max-width: 991px) {
+        .experience p, .experience a {
+            font-size: 20px;
+        }
+    }
+    
+    @media (max-width: 1200px) {
+        .calculates span {
+            margin-left: 0px;
+        }
+    }
+    
+    @media (min-width: 1200px) {
+        .calclulates span {
+            margin-left: 545px;
+        }
+        .calculates .zero {
+            margin-left: 501px;
+        }
+    }
+    
+    @media (max-width: 991px) {
+        .calculates select {
+            width: 547px;
+        }
     }
