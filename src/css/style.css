@@ -628,21 +628,26 @@ footer {
         position: absolute;
         background: rgba(0,0,0,0.4);
     }
+}
+    @media (min-width: 1200px) and (max-width: 1400px) {
+        .calculates select {
+            width: 770px;
+        }
+    }
+    
+    @media (max-width: 1200px) {
+        .calculates select {
+            width: 570px;
+        }
+    }
     
     @media (max-width: 991px) {
         .experience p, .experience a {
             font-size: 20px;
         }
-    }
-    
-    @media (max-width: 991px) {
         .calculates select {
             width: 547px;
         }
     }
     
-    @media (min-width: 1400px) {
-        .calculates select {
-            width: 557px;
-        }
-    }
+    
