@@ -346,7 +346,7 @@ main {
     margin: 100px 0px 70px 0px;
 }
 
-.stat_li {
+/*.stat_li {
     padding-left: 200px;
     padding-top: 55px;
 }
@@ -355,7 +355,7 @@ main {
     float: left;
     margin-right: 150px;
     
-}
+}*/
 
 .statistics h3 {
     font-size: 22px;
@@ -422,7 +422,7 @@ main {
 .calculates .shadow {
     position: absolute;    
     border: 1px solid rgba(0,0,0,0.5);
-    height: 760px;
+    height: 620px;
     left:170px;
     opacity: 0.5;
 }
