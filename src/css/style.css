@@ -235,7 +235,7 @@ main {
     float:left;
     width: 100%;
     text-align: center;
-    background: url(../img/orange_line.jpg) 50% 40% no-repeat, url(../img/background.jpg) 50% 10%/auto 100% no-repeat;
+    background: url(../img/orange_line.jpg) 50% 40% no-repeat, url(../img/background.jpg) center/cover no-repeat;
 }
 
 .skills h2 {
@@ -255,6 +255,13 @@ main {
     /*margin: 0px 0px 90px 120px;*/
     
 }
+
+.skills p {
+    margin-bottom: 70px;
+}
+
+
+
 .experience {
     width: 100%;
     float: left;
