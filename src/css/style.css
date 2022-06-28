@@ -324,19 +324,6 @@ nav {
     margin-top: 20px;
 }
 
-.exp_name_client {
-    float: left;
-}
-
-.exp_name_work {
-    margin-left: 400px;
-    margin-top: 20px;
-}
-
-.exp_desc {
-    margin-left: 400px;
-}
-
 .exp_wrapper {
     
     /*margin-left: 200px;*/
@@ -720,8 +707,12 @@ footer {
 }
 
 @media (max-width: 768px) {
+	.bio {
+		background: url(../img/orange_line.jpg) 50% 24% no-repeat;
+	}
+	
 	.skills {
-		background: url(../img/orange_line.jpg) 50% 20% no-repeat, url(../img/background.jpg) center/cover no-repeat;
+		background: url(../img/orange_line.jpg) 50% 19% no-repeat, url(../img/background.jpg) center/cover no-repeat;
 	}
 	
 	.statistics {
