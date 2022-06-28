@@ -436,7 +436,7 @@ nav {
 }
 
 .calculates input {
-    display: block;
+    
     background-color: #63b5ae;
     color: #fff;
     padding: 10px 35px 10px 35px;
@@ -720,7 +720,11 @@ footer {
 }
 
 @media (max-width: 768px) {
+	.skills {
+		background: url(../img/orange_line.jpg) 50% 20% no-repeat, url(../img/background.jpg) center/cover no-repeat;
+	}
+	
 	.statistics {
-		background: url(../img/orange_line.jpg) 50% 19% no-repeat, fixed url(../img/Stats.jpg) center/cover no-repeat;
+		background: url(../img/orange_line.jpg) 50% 17% no-repeat, fixed url(../img/Stats.jpg) center/cover no-repeat;
 	}
 }
