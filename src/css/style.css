@@ -457,8 +457,9 @@ nav {
     
     text-align: center;
     width: 100%;
-    background: url(../img/orange_line.jpg) 50% 35% no-repeat, url(../img/dot1.png) 48% 100% no-repeat, url(../img/dot2.png) 50% 100% no-repeat, url(../img/dot3.png) 52% 100% no-repeat;
-    margin-bottom: 60px;
+    background: url(../img/orange_line.jpg) 50% 33% no-repeat, url(../img/dot1.png) 48% 100% no-repeat, url(../img/dot2.png) 50% 100% no-repeat, url(../img/dot3.png) 52% 100% no-repeat;
+    padding-bottom: 20px;
+	margin-bottom: 70px;
 }
 
 .reviews h2 {
@@ -466,7 +467,8 @@ nav {
     font-weight: bold;
     text-transform: uppercase;
     text-align:center;
-    margin: 100px 0px 90px 0px;
+    margin: 0px 0px 90px 0px;
+	padding-top: 100px;
 }
 
 .reviews p {
@@ -484,7 +486,8 @@ nav {
     font-size: 22px;
     text-align:center;
     text-transform: uppercase;
-    margin: 100px 0px 50px 0px;
+    margin: 0px 0px 50px 0px;
+	padding-top: 100px;
 }
 
 .contacts h4 {
