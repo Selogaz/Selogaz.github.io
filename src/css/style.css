@@ -349,11 +349,16 @@ nav {
 
 .statistics {
     width: 100%;
-    height: 500px;
+    
     
     background: url(../img/orange_line.jpg) 50% 32% no-repeat, fixed url(../img/Stats.jpg) center/cover no-repeat;
     /*background-attachment: fixed;*/
     text-align: center;
+}
+
+.statistic_container {
+	margin: 0 auto;
+	padding-bottom: 100px;
 }
 
 .statistics h2 {
@@ -646,6 +651,8 @@ footer {
     color: white;
 }
 
+
+
 @media (max-width: 991px) {
     .title__container, .title__container>h4, .title__container input {
         color: white;
@@ -680,6 +687,10 @@ footer {
         background: url(../img/orange_line.jpg) 50% 26% no-repeat;
     }
 
+	.statistics {
+		background: url(../img/orange_line.jpg) 50% 27% no-repeat, fixed url(../img/Stats.jpg) center/cover no-repeat;
+	}
+	
     .statistics h3 {
         margin-bottom: 0px;
     }
@@ -706,4 +717,10 @@ footer {
         margin-left: 35px;
         margin-right: 0px;
     }
+}
+
+@media (max-width: 768px) {
+	.statistics {
+		background: url(../img/orange_line.jpg) 50% 19% no-repeat, fixed url(../img/Stats.jpg) center/cover no-repeat;
+	}
 }
