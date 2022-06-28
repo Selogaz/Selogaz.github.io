@@ -267,6 +267,10 @@ nav {
     margin: 100px 0px 100px 0px;
 }
 
+.exp_container {
+	
+}
+
 .experience h2 {
     font-weight: bold;
     font-size: 22px;
@@ -274,6 +278,8 @@ nav {
     text-align:center;
     margin-bottom: 70px;
     width:100%;
+	margin: 0px auto 30px;
+	
 }
 
 .exp_main_p {
@@ -331,7 +337,8 @@ nav {
 }
 
 .gallery-photo {
-	
+	width: 100%;
+	margin: 0px auto 30px;
 }
 
 .statistics {
@@ -634,7 +641,7 @@ footer {
     .title__container input {
         border: 2px solid #fff;
     }
-    .main::after {
+    .main:after {
         content:"";
         top:0;
         bottom:0;
