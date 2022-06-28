@@ -180,7 +180,7 @@ nav {
     width: 100%;
     
     text-align: center;
-    background: url(../img/orange_line.jpg) 50% 27% no-repeat;
+    background: url(../img/orange_line.jpg) 50% 26% no-repeat;
     margin-top: 20px;
     opacity: 0;
     -webkit-animation: comming 2s ease forwards;
@@ -233,7 +233,12 @@ nav {
     
     width: 100%;
     text-align: center;
-    background: url(../img/orange_line.jpg) 50% 40% no-repeat, url(../img/background.jpg) center/cover no-repeat;
+    background: url(../img/orange_line.jpg) 50% 27% no-repeat, url(../img/background.jpg) center/cover no-repeat;
+}
+
+.skills_container {
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
 .skills h2 {
@@ -241,7 +246,8 @@ nav {
     font-size: 22px;
     text-transform: uppercase;
     text-align:center;
-    margin: 100px 0px 100px 0px;
+    margin: 0px auto 110px;
+    padding-bottom: 5px;
 }
 
 .skills h4 {
@@ -278,7 +284,7 @@ nav {
     text-align:center;
     margin-bottom: 70px;
     width:100%;
-	margin: 0px auto 30px;
+	margin: 0px auto 60px;
 	
 }
 
@@ -338,7 +344,7 @@ nav {
 
 .gallery-photo {
 	width: 100%;
-	margin: 0px auto 30px;
+	
 }
 
 .statistics {
@@ -356,6 +362,7 @@ nav {
     text-transform: uppercase;
     text-align:center;
     margin: 100px 0px 70px 0px;
+	padding-top: 100px;
 }
 
 /*.stat_li {
@@ -381,8 +388,11 @@ nav {
     width: 100%;
 }
 
-.calc_wrapper {
-    margin: 0px 0px 100px 330px;
+.calc_container {
+	max-width: 1080px;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
 }
 
 .calculates h2 {
@@ -402,19 +412,22 @@ nav {
 
 .calculates select {
     background: #eeeeee;
-    width: 900px;
+    width: 100%;
     padding: 15px 0px 15px 0px;
 }
 
 .calculates h4 {
-    display: inline;
+    
     line-height: 30px;
     font-weight: bold;
+	float: left;
 }
 
 .calculates span {
     font-weight: bold;
     font-size: 16px;
+	line-height: 30px;
+	float: right;
 }
 
 .calculates input {
@@ -431,13 +444,14 @@ nav {
     text-decoration: none;
 }
 
-.calculates .shadow {
+/*.calculates .shadow {
     position: absolute;    
     border: 1px solid rgba(0,0,0,0.5);
+	max-width: 1080px;
     height: 620px;
     left:170px;
     opacity: 0.5;
-}
+}*/
 
 .reviews {
     
@@ -654,9 +668,6 @@ footer {
      .experience p, .experience a {
         font-size: 20px;
     }
-    .calculates select {
-        width: 547px;
-    }
 
     .skills {
         background: url(../img/orange_line.jpg) 50% 25% no-repeat, url(../img/background.jpg) center/cover no-repeat;
@@ -670,16 +681,8 @@ footer {
         margin-bottom: 0px;
     }
 }
-@media (min-width: 1200px) and (max-width: 1400px) {
-    .calculates select {
-        width: 770px;
-    }
-}
 
 @media (max-width: 1200px) {
-    .calculates select {
-        width: 570px;
-    }
     
     .phone {
         margin-left: 70px;
