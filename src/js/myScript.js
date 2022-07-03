@@ -16,13 +16,13 @@ let calculator = {
 	},
 	calcCounter: 0,
 	showType() {
-		calculator.calcCounter += prompt(calculator.greetingsType + calculator.tempString, 2);
+		calculator.calcCounter += parseInt(prompt(calculator.greetingsType + calculator.tempString, 2));
 	},
 	showDesign() {
-		calculator.calcCounter += prompt(calculator.greetingsDesign + calculator.tempString, 1);
+		calculator.calcCounter += parseInt(prompt(calculator.greetingsDesign + calculator.tempString, 1));
 	},
 	showResponsive() {
-		calculator.calcCounter += prompt(calculator.greetingsResponsive + calculator.tempString, 0);
+		calculator.calcCounter += parseInt(prompt(calculator.greetingsResponsive + calculator.tempString, 0));
 	},
 	calcCost() {
 		return 6000 * calculator.calcCounter;
@@ -53,4 +53,5 @@ setTimeout(function(){
 	calculator.calcCost();
 	calculator.calcTime();
 	calculator.showCostAndTime();
+	console.log(calculator.calcCounter);
 }, calculator.timer)
