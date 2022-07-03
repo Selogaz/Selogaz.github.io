@@ -7,8 +7,6 @@ let calculator = {
 	typeOfSite: 2,
 	design: 1,
 	responsive: 0,
-	time: 0,
-	cost: 0,
 	arrType: ["Сайт-визитка", "Корпоративный сайт", "Лендинг", "Интернет-витрина", "Интернет-магазин", "Новостной сайт", "Тематический сайт", "Блог", "Сайт-справочник", "Веб-сервис"],
 	arrDesign: ["Деловой", "Классический", "Яркий"],
 	arrResponsive: ["Мобильные и ПК", "Только мобильные", "Только ПК"],
@@ -16,14 +14,24 @@ let calculator = {
 	clearString() {
 		calculator.tempString = "";
 	},
+	calcCounter: 0,
 	showType() {
-	prompt(calculator.greetingsType + calculator.tempString, 2);
+		calculator.calcCounter += prompt(calculator.greetingsType + calculator.tempString, 2);
 	},
 	showDesign() {
-	prompt(calculator.greetingsDesign + calculator.tempString, 1);
+		calculator.calcCounter += prompt(calculator.greetingsDesign + calculator.tempString, 1);
 	},
 	showResponsive() {
-	prompt(calculator.greetingsResponsive + calculator.tempString, 0);
+		calculator.calcCounter += prompt(calculator.greetingsResponsive + calculator.tempString, 0);
+	},
+	calcCost() {
+		return 6000 * calculator.calcCounter;
+	},
+	calcTime() {
+		return 2 * calculator.calcCounter;
+	},
+	showCostAndTime() {
+		alert("Стоимость работы составит " + calculator.calcCost() + " рублей\n" + "Работы будут выполнены через " + calculator.calcTime() + " недели");
 	},
 };
 calculator.arrType.forEach(function (item, index, array) {
@@ -40,3 +48,6 @@ calculator.arrResponsive.forEach(function (item, index, array) {
 	calculator.tempString += index + " - " + item + "\n";
 	});
 calculator.showResponsive();
+calculator.calcCost();
+calculator.calcTime();
+calculator.showCostAndTime();
