@@ -33,21 +33,24 @@ let calculator = {
 	showCostAndTime() {
 		alert("Стоимость работы составит " + calculator.calcCost() + " рублей\n" + "Работы будут выполнены через " + calculator.calcTime() + " недели");
 	},
+	timer: 3000,
 };
-calculator.arrType.forEach(function (item, index, array) {
-	calculator.tempString += index + " - " + item + "\n";
-	});
-calculator.showType();
-calculator.clearString();
-calculator.arrDesign.forEach(function (item, index, array) {
-	calculator.tempString += index + " - " + item + "\n";
-	});
-calculator.showDesign();
-calculator.clearString();
-calculator.arrResponsive.forEach(function (item, index, array) {
-	calculator.tempString += index + " - " + item + "\n";
-	});
-calculator.showResponsive();
-calculator.calcCost();
-calculator.calcTime();
-calculator.showCostAndTime();
+setTimeout(function(){
+	calculator.arrType.forEach(function (item, index, array) {
+		calculator.tempString += index + " - " + item + "\n";
+		});
+	calculator.showType();
+	calculator.clearString();
+	calculator.arrDesign.forEach(function (item, index, array) {
+		calculator.tempString += index + " - " + item + "\n";
+		});
+	calculator.showDesign();
+	calculator.clearString();
+	calculator.arrResponsive.forEach(function (item, index, array) {
+		calculator.tempString += index + " - " + item + "\n";
+		});
+	calculator.showResponsive();
+	calculator.calcCost();
+	calculator.calcTime();
+	calculator.showCostAndTime();
+}, calculator.timer)
