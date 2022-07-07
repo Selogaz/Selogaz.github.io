@@ -123,7 +123,7 @@ $(document).ready(function(){
 		}
 	});
 	$(window).scroll(() => {//класс active при скролле
-		/*let scrollDistance = $(window).scrollTop();
+		let scrollDistance = $(window).scrollTop();
 		$(".section").each((i, el) => {
 			if($(el).offset().top - $("nav").outerHeight() <= scrollDistance){
 				$("nav a").each((i, el) => {
@@ -133,9 +133,9 @@ $(document).ready(function(){
 				});
 				$('nav li:eq('+ i +')').find('a').addClass('active');
 			}
-		});*/
+		});
 	});
-	$(window).scroll(() => {
+	/*$(window).scroll(() => {
 		   let hT = $('#bio').offset().top,
 			   hH = $('#bio').outerHeight(),
 			   wH = $(window).height(),
@@ -143,6 +143,6 @@ $(document).ready(function(){
 		   if (wS > (hT+hH-wH)){
 			   $('a[href="#bio"]').addClass('active');
 		   }
-	});
+	});*/
 });
 
