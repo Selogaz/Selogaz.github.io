@@ -119,13 +119,25 @@ nav {
     transform: scale(1.1);
 }
 
+.active::before {
+	content: "";
+	
+}
+
+.active::after {
+	content: "";
+}
+
 .active {
 	display: inline-block;
 	line-height: 30px;
 	background-color: #d17700;
 	height: 2px;
-	width: 100%;
-	max-width: 210px;
+	animation: active 1s ease forwards;
+}
+
+.nowrap {
+	white-space: nowrap;
 }
 
 .main {
@@ -624,6 +636,15 @@ footer {
     }
     100% {
         transform: rotateY(180deg);
+    }
+}
+
+@keyframes active {
+    from {
+        width: 10%;
+    }
+    to {
+        width: 100%;
     }
 }
 

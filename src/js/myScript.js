@@ -117,11 +117,13 @@ $(document).ready(function(){
 				$(el).removeClass("active");
 			} 
 		});
-		$(this).addClass("active");
+		let home = $('a[href="#home"]');
+		if (!($(this).is(home))) {
+			$(this).addClass("active");
+		}
 	});
 	$(window).scroll(() => {//класс active при скролле
-		let scrollDistance = $(window).scrollTop();
-		console.log(scrollDistance);
+		/*let scrollDistance = $(window).scrollTop();
 		$(".section").each((i, el) => {
 			if($(el).offset().top - $("nav").outerHeight() <= scrollDistance){
 				$("nav a").each((i, el) => {
@@ -131,7 +133,16 @@ $(document).ready(function(){
 				});
 				$('nav li:eq('+ i +')').find('a').addClass('active');
 			}
-		});
+		});*/
+	});
+	$(window).scroll(() => {
+		   let hT = $('#bio').offset().top,
+			   hH = $('#bio').outerHeight(),
+			   wH = $(window).height(),
+			   wS = $(this).scrollTop();
+		   if (wS > (hT+hH-wH)){
+			   $('a[href="#bio"]').addClass('active');
+		   }
 	});
 });
 
