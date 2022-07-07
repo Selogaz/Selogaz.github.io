@@ -112,17 +112,18 @@ $(document).ready(function(){
 		} else {
 			alert("Проверь корректность ссылок и id");
 		}
-		$("nav a").each((i, el) => {//Класс active
-			if($(el).hasClass("active")){
+		$("nav a").each((i, el) => {//Класс active при клике
+			if ($(el).hasClass("active")){
 				$(el).removeClass("active");
 			} 
 		});
 		$(this).addClass("active");
 	});
-	$(window).scroll(() => {//хуита не работает
+	$(window).scroll(() => {//класс active при скролле
 		let scrollDistance = $(window).scrollTop();
+		console.log(scrollDistance);
 		$(".section").each((i, el) => {
-			if($(el).offset().top - $("nav").outerHeight <= scrollDistance){
+			if($(el).offset().top - $("nav").outerHeight() <= scrollDistance){
 				$("nav a").each((i, el) => {
 					if ($(el).hasClass("active")){
 						$(el).removeClass("active");

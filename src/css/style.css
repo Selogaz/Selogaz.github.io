@@ -120,10 +120,12 @@ nav {
 }
 
 .active {
+	display: inline-block;
 	line-height: 30px;
 	background-color: #d17700;
 	height: 2px;
 	width: 100%;
+	max-width: 210px;
 }
 
 .main {
