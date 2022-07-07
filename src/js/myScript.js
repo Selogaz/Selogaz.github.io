@@ -21,34 +21,45 @@ let calculator = {
 		calculator.calcCounter += parseInt(prompt(calculator.greetingsResponsive + calculator.tempString, 0));
 	},
 	costArr: [0, 0, 0],
+	timeArr: [0, 0, 0],
 	calcCost() {
 		calculator.totalCost = calculator.costArr[0] + calculator.costArr[1] + calculator.costArr[2];
 		console.log(calculator.totalCost);
-		return calculator.totalCost;
 	},
 	calcTime() {
-		return 2 * calculator.calcCounter;
+		calculator.totalTime = calculator.timeArr[0] + calculator.timeArr[1] + calculator.timeArr[2] + " дней";
 	},
 	showCostAndTime() {
 		alert("Стоимость работы составит " + calculator.calcCost() + " рублей\n" + "Работы будут выполнены через " + calculator.calcTime() + " недели");
 	},
 	timer: 3000,
 	totalCost: 0,
+	totalTime: 0,
 	gotValues(id, arr) {
 		$(id).each(function() {
     		arr.push($(this).val());
     	});
 	},
-	/*getCost(id, arr, num) {
-		$('id').on('change', function() {
-		calculator.tempString = $(this).val();
-		arr.forEach(function (item, index, array) {
-			if (calculator.tempString == arr[index]) {
-				calculator.costArr[num] = (index) * 1000;		
-			}
+	getCost(id, arr, num) {
+		$(id).on('change', function() {
+			calculator.tempString = $(this).val();
+			arr.forEach(function (item, index, array) {
+				if (calculator.tempString == arr[index]) {
+					calculator.costArr[num] = index * 1000;		
+				}
+			});
 		});
-	});
-	},*/
+	},
+	getTime(id, arr, num) {
+		$(id).on('change', function() {
+			calculator.tempString = $(this).val();
+			arr.forEach(function (item, index, array) {
+				if (calculator.tempString == arr[index]) {
+					calculator.timeArr[num] = index * 4;		
+				}
+			});
+		});
+	},
 };
 /*setTimeout(function(){
 	calculator.arrType.forEach(function (item, index, array) {
@@ -74,37 +85,24 @@ $(document).ready(function(){
 	calculator.gotValues('select[id="list"] option', calculator.arrType);
 	calculator.gotValues('select[id="list2"] option', calculator.arrDesign);
 	calculator.gotValues('select[id="list3"] option', calculator.arrResponsive);
-	$('select[id="list"]').on('change', function() {
-		calculator.tempString = $(this).val();
-		calculator.arrType.forEach(function (item, index, array) {
-			if (calculator.tempString == calculator.arrType[index]) {
-				calculator.costArr[0] = (index) * 1000;
-			}
-		});
-	});
+	calculator.getCost('select[id="list"]', calculator.arrType, 0);
 	calculator.clearString();
-	$('select[id="list2"]').on('change', function() {
-		calculator.tempString = $(this).val();
-		calculator.arrDesign.forEach(function (item, index, array) {
-			if (calculator.tempString == calculator.arrDesign[index]) {
-				calculator.costArr[1] = (index) * 1000;
-				
-			}
-		});
-	});
+	calculator.getTime('select[id="list"]', calculator.arrType, 0);
 	calculator.clearString();
-	$('select[id="list3"]').on('change', function() {
-		calculator.tempString = $(this).val();
-		calculator.arrResponsive.forEach(function (item, index, array) {
-			if (calculator.tempString == calculator.arrResponsive[index]) {
-				calculator.costArr[2] = (index) * 1000;
-			}
-		});
-	});
+	calculator.getCost('select[id="list2"]', calculator.arrDesign, 1);
+	calculator.clearString();
+	calculator.getTime('select[id="list2"]', calculator.arrDesign, 1);
+	calculator.clearString();
+	calculator.getCost('select[id="list3"]', calculator.arrResponsive, 2);
+	calculator.clearString();
+	calculator.getTime('select[id="list3"]', calculator.arrResponsive, 2);
 	$('select').on('change', function() {
 		calculator.calcCost();
+		calculator.calcTime();
 		$('.cost').html(calculator.totalCost);
+		$('.time').html(calculator.totalTime);
 		calculator.totalCost = 0;
+		calculator.totalTime = 0;
 	});
 });
 
