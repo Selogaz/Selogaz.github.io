@@ -104,5 +104,14 @@ $(document).ready(function(){
 		calculator.totalCost = 0;
 		calculator.totalTime = 0;
 	});
+let checkFukError = $('a[href^="#"]');
+checkFukError.on('click', function() {
+	if (checkFukError.length) {
+			let anchorLinks = $(this).attr("href");
+			$('html, body').animate({scrollTop: $(anchorLinks).offset().top}, 'slow');
+		} else {
+			alert("Проверь корректность ссылок и id");
+		}
+	});
 });
 
