@@ -119,7 +119,12 @@ nav {
     transform: scale(1.1);
 }
 
-
+.active {
+	line-height: 30px;
+	background-color: #d17700;
+	height: 2px;
+	width: 100%;
+}
 
 .main {
     width: 100%;

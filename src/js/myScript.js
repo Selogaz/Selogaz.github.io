@@ -23,7 +23,7 @@ let calculator = {
 	costArr: [0, 0, 0],
 	timeArr: [0, 0, 0],
 	calcCost() {
-		calculator.totalCost = calculator.costArr[0] + calculator.costArr[1] + calculator.costArr[2];
+		calculator.totalCost = calculator.costArr[0] + calculator.costArr[1] + calculator.costArr[2] + " руб";
 		console.log(calculator.totalCost);
 	},
 	calcTime() {
@@ -82,7 +82,7 @@ let calculator = {
 }, calculator.timer)*/
 
 $(document).ready(function(){
-	calculator.gotValues('select[id="list"] option', calculator.arrType);
+	calculator.gotValues('select[id="list"] option', calculator.arrType);//Калькулятор
 	calculator.gotValues('select[id="list2"] option', calculator.arrDesign);
 	calculator.gotValues('select[id="list3"] option', calculator.arrResponsive);
 	calculator.getCost('select[id="list"]', calculator.arrType, 0);
@@ -104,14 +104,33 @@ $(document).ready(function(){
 		calculator.totalCost = 0;
 		calculator.totalTime = 0;
 	});
-let checkFukError = $('a[href^="#"]');
-checkFukError.on('click', function() {
-	if (checkFukError.length) {
+	let checkFukError = $('a[href^="#"]');//Якорные ссылки
+	checkFukError.on('click', function() {
+		if (checkFukError.length) {
 			let anchorLinks = $(this).attr("href");
-			$('html, body').animate({scrollTop: $(anchorLinks).offset().top}, 'slow');
+			$('html, body').animate({scrollTop: $(anchorLinks).offset().top - 50 + "px"}, 'slow');
 		} else {
 			alert("Проверь корректность ссылок и id");
 		}
+		$("nav a").each((i, el) => {//Класс active
+			if($(el).hasClass("active")){
+				$(el).removeClass("active");
+			} 
+		});
+		$(this).addClass("active");
+	});
+	$(window).scroll(() => {//хуита не работает
+		let scrollDistance = $(window).scrollTop();
+		$(".section").each((i, el) => {
+			if($(el).offset().top - $("nav").outerHeight <= scrollDistance){
+				$("nav a").each((i, el) => {
+					if ($(el).hasClass("active")){
+						$(el).removeClass("active");
+					}
+				});
+				$('nav li:eq('+ i +')').find('a').addClass('active');
+			}
+		});
 	});
 });
 
