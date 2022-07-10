@@ -117,10 +117,10 @@ $(document).ready(function(){
 				$(el).removeClass("active");
 			} 
 		});
-		let home = $('a[href="#home"]');
+		/*let home = $('a[href="#home"]');
 		if (!($(this).is(home))) {
 			$(this).addClass("active");
-		}
+		}*/
 	});
 	$(window).scroll(() => {//класс active при скролле
 		let scrollDistance = $(window).scrollTop();
@@ -130,10 +130,61 @@ $(document).ready(function(){
 					if ($(el).hasClass("active")){
 						$(el).removeClass("active");
 					}
-				});
-				$('nav li:eq('+ i +')').find('a').addClass('active');
+				}); 
+				let finder = $('nav li:eq('+ i +')').find('a');
+				finder.addClass('active');
 			}
 		});
+		let time = 2,//анимация статистики
+			cc = 1;
+		$('.statistics').each(function() {
+		let cPos = $(this).offset().top,
+			topWindow = $(window).scrollTop();
+		if (cPos < topWindow + 200) {
+		  if (cc < 2) {
+			$('h3').each(function() {
+			let i = 1,
+				num = $(this).data('num'),
+				step = 1000 * time / num,
+				that = $(this),
+				int = setInterval(function() {
+				  if (i <= num) {
+					that.html(i);
+				  } else {
+					cc = cc + 2;
+					clearInterval(int);
+				  }
+				  i++;
+				}, step);
+			});
+		  }
+		}});
+				
+		$('.bio h2').each((i, el) => {//анимация заголовка при долистывании
+			if ($(el).hasClass("animate__swing")){
+				$(el).removeClass("animate__swing");
+			} else
+				$(el).addClass('animate__swing');
+		});
+	});
+	$('.image-link').magnificPopup({
+		items: [
+			{
+				src: "img/Barbershop.png"
+				
+			},
+			{
+				src: "img/homes-small.jpg"
+			}
+		],
+		image: {
+			titleSrc: 'title'
+		},
+		type:'image',
+		gallery: {
+      		enabled: true
+    	},
+		
 	});
 	/*$(window).scroll(() => {
 		   let hT = $('#bio').offset().top,
