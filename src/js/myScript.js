@@ -167,33 +167,11 @@ $(document).ready(function(){
 				$(el).addClass('animate__swing');
 		});
 	});
-	$('.image-link').magnificPopup({
-		items: [
-			{
-				src: "img/Barbershop.png"
-				
-			},
-			{
-				src: "img/homes-small.jpg"
-			}
-		],
-		image: {
-			titleSrc: 'title'
-		},
-		type:'image',
-		gallery: {
-      		enabled: true
-    	},
-		
+	$('.image-link').magnificPopup();
+	$('.sli').slick({
+		arrows: true,
+		dots: true,
+		adaptiveHeight: true
 	});
-	/*$(window).scroll(() => {
-		   let hT = $('#bio').offset().top,
-			   hH = $('#bio').outerHeight(),
-			   wH = $(window).height(),
-			   wS = $(this).scrollTop();
-		   if (wS > (hT+hH-wH)){
-			   $('a[href="#bio"]').addClass('active');
-		   }
-	});*/
 });
 

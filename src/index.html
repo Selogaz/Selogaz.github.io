@@ -21,6 +21,8 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+
 	<script src="https://kit.fontawesome.com/d86e499cd9.js" crossorigin="anonymous"></script>
 </head>
 
@@ -123,8 +125,11 @@
 			<div class=" exp_container container">
 				<h2>Мои работы</h2>
 				<p class="exp_main_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure ut, illum totam eum fuga.</p>
-				<img class="gallery-photo image-link" href="img/Barbershop.png" src="img/Barbershop_small.jpg" alt="Сайт барбершопа Бородинский">
-				<div class="row justify-content-between">
+				<div class="sli">
+					<img class="gallery-photo mfp-image image-link first" href="img/Barbershop.png" src="img/Barbershop_small.jpg" alt="Сайт барбершопа Бородинский">		
+					<img class="gallery-photo mfp-image image-link second" href="img/homes-small.jpg" src="img/homes_micro.jpg" alt="Сайт строительной компании">
+				</div>
+				<div class="row justify-content-between first-desc">
 					<div class="col-12 col-md-3 col-lg-2">
 						<h4 class="exp_client">КЛИЕНТ:</h4>
 						<p class="exp_name_client">HTML Academy</p>
@@ -137,7 +142,8 @@
 						<p class="exp_desc">Учебный проект в рамках курса по фронтенд разработке в HTML Academy</p>
 					</div>
 				</div>
-				<img class="gallery-photo image-link" href="img/homes-small.jpg" src="img/homes_micro.jpg" alt="Сайт строительной компании">
+				
+				<img class="gallery-photo mfp-image image-link" href="img/homes-small.jpg" src="img/homes_micro.jpg" alt="Сайт строительной компании">
 				<div class="row justify-content-between">
 					<div class="col-12 col-md-3 col-lg-2">
 						<h4 class="exp_client">КЛИЕНТ:</h4>
@@ -234,9 +240,30 @@
 		</section>
 		<section class="reviews" id="reviews">
 			<h2>Отзывы</h2>
-			<img src="img/Reviews.png" alt="Фото из отзывов">
+			<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+			  <div class="carousel-inner">
+				<div class="carousel-item active">
+				  <img src="img/Reviews.png" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item">
+				  <img src="img/Reviews-two.png" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item">
+				  <img src="img/Reviews-three.png" class="d-block w-100" alt="...">
+				</div>
+			  </div>
+			  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Предыдущий</span>
+			  </button>
+			  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Следующий</span>
+			  </button>
+			</div>
+			<!--<img src="img/Reviews-two.png" alt="Фото из отзывов">
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non consectetur, facilis necessitatibus fuga<br> velit officia totam, laboriosam numquam adipisci enim.</p>
-			<p>Lorem ipsum dolor sit amet.</p>
+			<p>Lorem ipsum dolor sit amet.</p>-->
 		</section>
 		<section class="contacts section" id="contacts">
 			<h2>Мои контакты</h2>
@@ -301,6 +328,7 @@
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
 	<script src="js/myScript.js"></script>
 </body>
 
