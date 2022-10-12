@@ -820,6 +820,22 @@ footer {
 	animation: none !important;
 }
 
-.reviews .carousel-item {
-	
+.carousel {
+  height: 300px !important;
+}
+.carousel-inner img {
+  height: 200px !important;
+  margin: 0 auto;
+}
+.carousel-indicators li {
+  border-color: #000;
+}
+.carousel-indicators .active {
+  background-color: #000;
+}
+.carousel-control-prev-icon {
+	background-color: #d17700 !important;
+}
+.carousel-control-next-icon {
+	background-color: #d17700 !important;
 }
