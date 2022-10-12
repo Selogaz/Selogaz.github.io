@@ -811,3 +811,15 @@ footer {
 .reviews img {
 	border-radius: 50% 50%;
 }
+
+.no-active {
+	height: auto;
+	background-color: #ffffff;
+	-webkit-animation: none !important;
+	-o-animation: none !important;
+	animation: none !important;
+}
+
+.reviews .carousel-item {
+	
+}
