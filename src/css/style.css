@@ -840,3 +840,7 @@ footer {
 .carousel-control-next-icon {
 	background-color: #d17700 !important;
 }
+
+.karusel {
+	height: 100px;	
+}

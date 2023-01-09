@@ -173,6 +173,8 @@ $(document).ready(function(){
 		dots: true,
 		adaptiveHeight: true
 	});
+	$("#lightSlider").lightSlider(); 
+
 });
 
 console.log(typeof (function(){})());
