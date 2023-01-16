@@ -113,26 +113,26 @@ $(document).ready(function(){
 			alert("Проверь корректность ссылок и id");
 		}
 		$("nav a").each((i, el) => {//Класс active при клике
-			if ($(el).hasClass("active")){
-				$(el).removeClass("active");
+			if ($(el).hasClass("myActive")){
+				$(el).removeClass("myActive");
 			} 
 		});
 		/*let home = $('a[href="#home"]');
 		if (!($(this).is(home))) {
-			$(this).addClass("active");
+			$(this).addClass("myActive");
 		}*/
 	});
-	$(window).scroll(() => {//класс active при скролле
+	$(window).scroll(() => {//класс myActive при скролле
 		let scrollDistance = $(window).scrollTop();
 		$(".section").each((i, el) => {
 			if($(el).offset().top - $("nav").outerHeight() <= scrollDistance){
 				$("nav a").each((i, el) => {
-					if ($(el).hasClass("active")){
-						$(el).removeClass("active");
+					if ($(el).hasClass("myActive")){
+						$(el).removeClass("myActive");
 					}
 				}); 
 				let finder = $('nav li:eq('+ i +')').find('a');
-				finder.addClass('active');
+				finder.addClass('myActive');
 			}
 		});
 		let time = 2,//анимация статистики
@@ -173,8 +173,19 @@ $(document).ready(function(){
 		dots: true,
 		adaptiveHeight: true
 	});
-	$("#lightSlider").lightSlider(); 
-
+	
 });
 
-console.log(typeof (function(){})());
+$('#lightSlider').lightSlider({
+    gallery: true,
+    item: 1,
+    loop:true,
+    slideMargin: 0,
+    thumbItem: 9,
+	 controls: true,
+        prevHtml: '',
+        nextHtml: ''
+});
+
+
+//li.data-thumb = '..img/dot1.png';

@@ -119,16 +119,16 @@ nav {
     transform: scale(1.1);
 }
 
-.active::before {
+.myActive::before {
 	content: "";
 	
 }
 
-.active::after {
+.myActive::after {
 	content: "";
 }
 
-.active {
+.myActive {
 	display: inline-block;
 	line-height: 30px;
 	background-color: #d17700;
@@ -831,7 +831,7 @@ footer {
 .carousel-indicators li {
   border-color: #000;
 }
-.carousel-indicators .active {
+.carousel-indicators .myActive {
   background-color: #000;
 }
 .carousel-control-prev-icon {
@@ -841,6 +841,3 @@ footer {
 	background-color: #d17700 !important;
 }
 
-.karusel {
-	height: 100px;	
-}
