@@ -86,14 +86,15 @@
     background-color: #CFD3D8;
     border-radius: 30px;
     display: inline-block;
-    height: 8px;
+    height: 10px;
     overflow: hidden;
     text-indent: -999em;
-    width: 8px;
+    width: 10px;
     position: relative;
     z-index: 99;
     -webkit-transition: all 0.5s linear 0s;
     transition: all 0.5s linear 0s;
+	margin-left: 10px;
 }
 .lSSlideOuter .lSPager.lSpg > li:hover a, .lSSlideOuter .lSPager.lSpg > li.active a {
     background-color: #d17700;

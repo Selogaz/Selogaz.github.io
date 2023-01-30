@@ -186,8 +186,6 @@ $('#lightSlider').lightSlider({
         prevHtml: '',
         nextHtml: '',
 	pager: true,
-	currentPagerPosition: 'left',
-	thumbMargin: 0,
 	
 });
 
