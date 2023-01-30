@@ -83,7 +83,7 @@
     padding: 0 5px;
 }
 .lSSlideOuter .lSPager.lSpg > li a {
-    background-color: #CFD3D8;
+    background-color: #222222;
     border-radius: 30px;
     display: inline-block;
     height: 8px;
@@ -96,7 +96,7 @@
     transition: all 0.5s linear 0s;
 }
 .lSSlideOuter .lSPager.lSpg > li:hover a, .lSSlideOuter .lSPager.lSpg > li.active a {
-    background-color: #d17700;
+    background-color: #428bca;
 }
 .lSSlideOuter .media {
     opacity: 0.8;
@@ -154,7 +154,7 @@
     display: block;
     top: 50%;
     height: 32px;
-    background-image: url('../img/controls_orange.png');
+    background-image: url('../img/controls.png');
     cursor: pointer;
     position: absolute;
     z-index: 99;

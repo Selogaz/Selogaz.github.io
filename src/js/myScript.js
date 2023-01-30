@@ -177,15 +177,17 @@ $(document).ready(function(){
 });
 
 $('#lightSlider').lightSlider({
-    gallery: true,
+    
     item: 1,
     loop:true,
     slideMargin: 0,
     thumbItem: 9,
 	 controls: true,
         prevHtml: '',
-        nextHtml: ''
+        nextHtml: '',
+	pager: true,
+	currentPagerPosition: 'left',
+	thumbMargin: 0,
+	
 });
 
-
-//li.data-thumb = '..img/dot1.png';
