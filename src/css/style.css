@@ -840,3 +840,7 @@ footer {
 	background-color: #d17700 !important;
 }
 
+#contacts a {
+	color: #fff !important;
+	text-decoration: none;
+}

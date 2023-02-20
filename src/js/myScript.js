@@ -36,26 +36,26 @@ let calculator = {
 	totalCost: 0,
 	totalTime: 0,
 	gotValues(id, arr) {
-		$(id).each(function() {
-    		arr.push($(this).val());
-    	});
+		$(id).each(function () {
+			arr.push($(this).val());
+		});
 	},
 	getCost(id, arr, num) {
-		$(id).on('change', function() {
+		$(id).on('change', function () {
 			calculator.tempString = $(this).val();
 			arr.forEach(function (item, index, array) {
 				if (calculator.tempString == arr[index]) {
-					calculator.costArr[num] = index * 1000;		
+					calculator.costArr[num] = index * 1000;
 				}
 			});
 		});
 	},
 	getTime(id, arr, num) {
-		$(id).on('change', function() {
+		$(id).on('change', function () {
 			calculator.tempString = $(this).val();
 			arr.forEach(function (item, index, array) {
 				if (calculator.tempString == arr[index]) {
-					calculator.timeArr[num] = index * 4;		
+					calculator.timeArr[num] = index * 4;
 				}
 			});
 		});
@@ -81,8 +81,8 @@ let calculator = {
 	calculator.showCostAndTime();
 }, calculator.timer)*/
 
-$(document).ready(function(){
-	calculator.gotValues('select[id="list"] option', calculator.arrType);//Калькулятор
+$(document).ready(function () {
+	calculator.gotValues('select[id="list"] option', calculator.arrType); //Калькулятор
 	calculator.gotValues('select[id="list2"] option', calculator.arrDesign);
 	calculator.gotValues('select[id="list3"] option', calculator.arrResponsive);
 	calculator.getCost('select[id="list"]', calculator.arrType, 0);
@@ -96,7 +96,7 @@ $(document).ready(function(){
 	calculator.getCost('select[id="list3"]', calculator.arrResponsive, 2);
 	calculator.clearString();
 	calculator.getTime('select[id="list3"]', calculator.arrResponsive, 2);
-	$('select').on('change', function() {
+	$('select').on('change', function () {
 		calculator.calcCost();
 		calculator.calcTime();
 		$('.cost').html(calculator.totalCost);
@@ -104,88 +104,131 @@ $(document).ready(function(){
 		calculator.totalCost = 0;
 		calculator.totalTime = 0;
 	});
-	let checkFukError = $('a[href^="#"]');//Якорные ссылки
-	checkFukError.on('click', function() {
+	let checkFukError = $('a[href^="#"]'); //Якорные ссылки
+	checkFukError.on('click', function () {
 		if (checkFukError.length) {
 			let anchorLinks = $(this).attr("href");
-			$('html, body').animate({scrollTop: $(anchorLinks).offset().top - 50 + "px"}, 'slow');
+			$('html, body').animate({
+				scrollTop: $(anchorLinks).offset().top - 50 + "px"
+			}, 'slow');
 		} else {
 			alert("Проверь корректность ссылок и id");
 		}
-		$("nav a").each((i, el) => {//Класс active при клике
-			if ($(el).hasClass("myActive")){
+		$("nav a").each((i, el) => { //Класс active при клике
+			if ($(el).hasClass("myActive")) {
 				$(el).removeClass("myActive");
-			} 
+			}
 		});
 		/*let home = $('a[href="#home"]');
 		if (!($(this).is(home))) {
 			$(this).addClass("myActive");
 		}*/
 	});
-	$(window).scroll(() => {//класс myActive при скролле
+	$(window).scroll(() => { //класс myActive при скролле
 		let scrollDistance = $(window).scrollTop();
 		$(".section").each((i, el) => {
-			if($(el).offset().top - $("nav").outerHeight() <= scrollDistance){
+			if ($(el).offset().top - $("nav").outerHeight() <= scrollDistance) {
 				$("nav a").each((i, el) => {
-					if ($(el).hasClass("myActive")){
+					if ($(el).hasClass("myActive")) {
 						$(el).removeClass("myActive");
 					}
-				}); 
-				let finder = $('nav li:eq('+ i +')').find('a');
+				});
+				let finder = $('nav li:eq(' + i + ')').find('a');
 				finder.addClass('myActive');
 			}
 		});
-		let time = 2,//анимация статистики
+		let time = 2, //анимация статистики
 			cc = 1;
-		$('.statistics').each(function() {
-		let cPos = $(this).offset().top,
-			topWindow = $(window).scrollTop();
-		if (cPos < topWindow + 200) {
-		  if (cc < 2) {
-			$('h3').each(function() {
-			let i = 1,
-				num = $(this).data('num'),
-				step = 1000 * time / num,
-				that = $(this),
-				int = setInterval(function() {
-				  if (i <= num) {
-					that.html(i);
-				  } else {
-					cc = cc + 2;
-					clearInterval(int);
-				  }
-				  i++;
-				}, step);
-			});
-		  }
-		}});
-				
-		$('.bio h2').each((i, el) => {//анимация заголовка при долистывании
-			if ($(el).hasClass("animate__swing")){
+		$('.statistics').each(function () {
+			let cPos = $(this).offset().top,
+				topWindow = $(window).scrollTop();
+			if (cPos < topWindow + 200) {
+				if (cc < 2) {
+					$('h3').each(function () {
+						let i = 1,
+							num = $(this).data('num'),
+							step = 1000 * time / num,
+							that = $(this),
+							int = setInterval(function () {
+								if (i <= num) {
+									that.html(i);
+								} else {
+									cc = cc + 2;
+									clearInterval(int);
+								}
+								i++;
+							}, step);
+					});
+				}
+			}
+		});
+
+		$('.bio h2').each((i, el) => { //анимация заголовка при долистывании
+			if ($(el).hasClass("animate__swing")) {
 				$(el).removeClass("animate__swing");
 			} else
 				$(el).addClass('animate__swing');
 		});
 	});
+	
 	$('.image-link').magnificPopup();
 	$('.sli').slick({
 		arrows: true,
 		dots: true,
 		adaptiveHeight: true
 	});
-	
+
+	$("#inputTel").mask("+7(999) 999-9999");
+	$("form").submit(function (event) {
+		if ($("#inputTel").val() == "" || ($("#inputEmail").val() == "")) {
+			event.preventDefault();
+			alert("Заполните форму до конца");
+		}
+		event.preventDefault();
+		$.ajax({
+			type: "POST",
+			url: "php/myMail.php",
+			data: $(this).serialize()
+		}).done(function () {
+			$(this).find("input").val("");
+			alert("Успешно");
+			$("form").trigger("reset");
+		});
+		return false;
+	});
+	setTimeout(function () {
+		$(".btn-primary").click();
+	}, 1000);
+
+	new WOW().init();
+
+	$("#inputEmail").inputmask({
+		mask: "*{1,20}[.*{1,20}][.*{1,20}][.*{1,20}]@*{1,20}[.*{2,6}][.*{1,2}]",
+		greedy: false,
+		onBeforePaste: function (pastedValue, opts) {
+			pastedValue = pastedValue.toLowerCase();
+			return pastedValue.replace("mailto:", "");
+		},
+		definitions: {
+			'*': {
+				validator: "[0-9A-Za-z!#$%&'*+/=?^_`{|}~\-]",
+				cardinality: 1,
+				casing: "lower"
+			}
+		}
+	});
+
 });
 
 $('#lightSlider').lightSlider({
-    
-    item: 1,
-    loop:true,
-    slideMargin: 0,
-    thumbItem: 9,
-	 controls: true,
-        prevHtml: '',
-        nextHtml: '',
-	pager: true,
-	
-});
 
+	item: 1,
+	loop: true,
+	slideMargin: 0,
+	thumbItem: 9,
+	controls: true,
+	prevHtml: '',
+	nextHtml: '',
+	pager: true,
+
+});
