@@ -179,7 +179,8 @@ $(document).ready(function () {
 	});
 
 	$("#inputTel").mask("+7(999) 999-9999");
-	$("form").submit(function (event) {
+	$(".modal_form").submit(function (event) {
+		
 		if ($("#inputTel").val() == "" || ($("#inputEmail").val() == "")) {
 			event.preventDefault();
 			alert("Заполните форму до конца");
@@ -192,13 +193,11 @@ $(document).ready(function () {
 		}).done(function () {
 			$(this).find("input").val("");
 			alert("Успешно");
-			$("form").trigger("reset");
+			$(".modal_form").trigger("reset");
 		});
 		return false;
 	});
-	setTimeout(function () {
-		$(".btn-primary").click();
-	}, 1000);
+	
 
 	new WOW().init();
 
@@ -217,8 +216,11 @@ $(document).ready(function () {
 			}
 		}
 	});
-
+	
 });
+setTimeout(function () {
+		$(".launch_modal").click();
+	}, 5000);
 
 $('#lightSlider').lightSlider({
 
@@ -232,3 +234,4 @@ $('#lightSlider').lightSlider({
 	pager: true,
 
 });
+$("iframe")[0].setAttribute("width", "100%");

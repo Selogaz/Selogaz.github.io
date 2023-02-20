@@ -5,32 +5,45 @@
 	<meta charset="UTF-8">
 	<meta name="description" content="Веб-разработчик">
 	<meta name="author" content="Alexander">
-	<meta name="robots" conent="all">
+	<meta name="robots" content="all">
 
 	<meta property="og:image" content="/img/og-image.jpg">
-	<meta property=”og:url” content=”http://Selogaz.github.io”>
+	<meta property="og:url" content="http://Selogaz.github.io">
 	<meta property="og:title" content="Веб-разработчик">
 	<meta property="og:description" content="Помогу создать сайт или улучшить существующий">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<title>Александр Терентьев - Веб-разработчик</title>
-	<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reset.css">
 	
 	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/my-fonts.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css">
-	<link rel="stylesheet" type="text/css" href="css/slick.css" />
-	<link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/lightslider.css">
 	<link rel="stylesheet" href="css/style.css">
-
-	<script src="https://kit.fontawesome.com/d86e499cd9.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-<?php
-	include('nav.php');
+<!-- Yandex.Metrika counter -->
+	<script>
+   	(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   	m[i].l=1*new Date();
+   	for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   	k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   	(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+	   ym(92522857, "init", {
+        	clickmap:true,
+        	trackLinks:true,
+        	accurateTrackBounce:true
+   	});
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/92522857" style="position:absolute; left:-9999px;" alt="" 	></div></noscript>
+	<!-- /Yandex.Metrika counter -->
+	<?php
+		include("nav.php");
 	?>
 	<main>
 		<section class="main" id="home">
@@ -41,7 +54,7 @@
 							<h1><i class="fa-brands fa-css3 custom-css"></i>Привет <br>Я - Александр Терентьев</h1>
 							<h4><i class="icon-code-custom"></i>Веб-разработчик</h4>
 							<input type="button" value="Обо мне">
-							<input type="button" value="Мои работы">
+							<input type="button" onclick="ym(92522857,'reachGoal','cases'); return true;" value="Мои работы">
 						</div>
 					</div>
 				</div>
@@ -70,17 +83,17 @@
 					<h2 class="wow animate__animated animate__bounceInLeft">Что я умею</h2>
 					<div class="skill-icons d-flex justify-content-around flex-wrap">
 						<div class="col-md-12 col-lg-3">
-							<img src="img/index-svg-1.svg" width="100px" height="50px" alt="Иконка-сайт с нуля">
+							<img src="img/index-svg-1.svg" width="100" height="50" alt="Иконка-сайт с нуля">
 							<h4>Создание сайта с нуля</h4>
 							<p>Вот не было у вас сайта. А потом хоп, и появится.</p>
 						</div>
 						<div class="col-md-12 col-lg-3">
-							<img src="img/index-svg-2.svg" width="100px" height="50px" alt="Иконка-доработка">
+							<img src="img/index-svg-2.svg" width="100" height="50" alt="Иконка-доработка">
 							<h4>Доработка вашего сайта</h4>
 							<p>Вот был кривой сайт. А станет еще и неработоспособным.</p>
 						</div>
 						<div class="col-md-12 col-lg-3">
-							<img src="img/index-svg-3.svg" width="100px" height="50px" alt="Иконка-оптимизация">
+							<img src="img/index-svg-3.svg" width="100" height="50" alt="Иконка-оптимизация">
 							<h4>CEO-оптимизация</h4>
 							<p>Отправлю сайт на последнюю страницу выдачи гугла</p>
 						</div>
@@ -91,10 +104,9 @@
 		<section class="experience section" id="exp">
 			<div class=" exp_container container">
 				<h2>Мои работы</h2>
-				<p class="exp_main_p">Это Люба говорит</p>
+				<p class="exp_main_p">Это Люба говорит.</p>
 				<div class="sli">
-					
-					<img class="gallery-photo mfp-image image-link first" href="img/Barbershop.png" src="img/Barbershop_small.jpg" alt="Сайт барбершопа Бородинский">
+					<img class="gallery-photo mfp-image image-link first"  href="img/Barbershop.png" src="img/Barbershop_small.jpg" alt="Сайт барбершопа Бородинский">		
 					<img class="gallery-photo mfp-image image-link second" href="img/homes-small.jpg" src="img/homes_micro.jpg" alt="Сайт строительной компании">
 				</div>
 				<div class="row justify-content-between first-desc">
@@ -117,8 +129,10 @@
 						<h4 class="exp_client">КЛИЕНТ:</h4>
 						<p class="exp_name_client">Строительная компания</p>
 						<h4>САЙТ:</h4>
-						<a>https://xn----7sbnofunkkkl6e.xn--p1ai/</a>
-						<a href="https://xn----7sbnofunkkkl6e.xn--p1ai/"><input type="button" value="VISIT LIVE SITE"></a>
+						<a href="https://xn----7sbnofunkkkl6e.xn--p1ai/">https://xn----7sbnofunkkkl6e.xn--p1ai/</a>
+						<form action="https://xn----7sbnofunkkkl6e.xn--p1ai/">
+    							<input type="submit" value="VISIT LIVE SITE">
+						</form>						
 					</div>
 					<div class="col-12 col-md-9 mt-3 mt-md-0">
 						<h4 class="exp_name_work">Каменные дома</h4>
@@ -133,7 +147,7 @@
 					<!--div class="shadow col-10"></div>-->
 					<h2>Расчет стоимости</h2>
 					<div class="col-8">
-						<label id="list">Тип сайта</label>
+						<label id="site-type" for="list">Тип сайта</label>
 						<select name="list" id="list">
 							<option selected>Выберите пункт...</option>
 							<!--<option value="Call">Помочь с выбором...</option>-->
@@ -148,14 +162,14 @@
 							<option value="Сайт-справочник">Сайт-справочник</option>
 							<option value="Веб-сервис">Веб-сервис</option>
 						</select>
-						<label id="list2">Дизайн</label>
+						<label id="design" for="list2">Дизайн</label>
 						<select name="list2" id="list2">
 							<option selected>Выберите пункт...</option>
 							<option value="">Деловой</option>
 							<option value="">Классический</option>
 							<option value="">Яркий</option>
 						</select>
-						<label id="list3">Адаптивность</label>
+						<label id="adaptive" for="list3">Адаптивность</label>
 						<select name="list3" id="list3">
 							<option selected>Выберите пункт...</option>
 							<option value="Только ПК">Только ПК</option>
@@ -262,12 +276,12 @@
 				<div class="row">
 					<div class="col-4 offset-2">
 						<div class="input-group mb-3">
-							<input type="text" class="form-control" placeholder="Имя" aria-label="Username" aria-describedby="basic-addon1">
+							<input type="text" class="form-control" placeholder="Имя" aria-label="Username">
 						</div>
 					</div>
 					<div class="col-4">
 						<div class="input-group mb-3">
-							<input type="text" class="form-control" placeholder="Почта" aria-label="Mail" aria-describedby="basic-addon1">
+							<input type="text" class="form-control" placeholder="Почта" aria-label="Mail">
 						</div>
 					</div>
 				</div>
@@ -286,14 +300,15 @@
 			</div>
 		</section>
 		<section class="map">
-			<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7759b74298cf548dcb8083c79756efd550c165131f6dbbff625369e3c7cf8ece&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+			<h2>Как до нас добраться</h2>
+			<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7759b74298cf548dcb8083c79756efd550c165131f6dbbff625369e3c7cf8ece&amp;source=constructor" height="400"></iframe>
 		</section>
 	</main>
 	<footer>
 		<p>Copyright @ 2022 Александр Терентьев. Design by Web</p>
 	</footer>
 	<!-- Button trigger modal -->
-	<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+	<button type="button" class="btn btn-primary launch_modal visually-hidden" data-bs-toggle="modal" data-bs-target="#exampleModal">
 		Launch demo modal
 	</button>
 
@@ -306,9 +321,9 @@
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
-					<form action="php/myMail.php" method="post">
+					<form class="modal_form" action="php/myMail.php" method="post">
 						<div class="mb-3 row">
-							<label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+							<label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
 							<div class="col-sm-10">
 								<input type="email" name="user_email" class="form-control" id="inputEmail">
 							</div>
@@ -316,7 +331,7 @@
 						<div class="mb-3 row">
 							<label for="inputTel" class="col-sm-2 col-form-label">Телефон</label>
 							<div class="col-sm-10">
-								<input type="phone"  class="form-control" name="user_phone" id="inputTel">
+								<input type="tel"  class="form-control" name="user_phone" id="inputTel">
 							</div>
 						</div>
 						<div class="mb-3 form-check">
@@ -333,17 +348,18 @@
 				</div>
 			</div>
 		</div>
+	</div>
 		<script src="js/jquery-3.6.0.min.js"></script>
 		<script src="js/jquery.magnific-popup.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
-		<script type="text/javascript" src="js/slick.min.js"></script>
+		<script src="js/slick.min.js"></script>
 		<script src="js/bootstrap.bundle.min.js"></script>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="js/lightslider.js"></script>
 		<script src="js/wow.min.js"></script>
-		<script src="js/jquery.maskedinput.min.js" type="text/javascript"></script>
+		<script src="js/jquery.maskedinput.min.js"></script>
 		<script src="js/jquery.inputmask.min.js"></script>
 		<script src="js/myScript.js"></script>
-</body>
 
+</body>
 </html>
