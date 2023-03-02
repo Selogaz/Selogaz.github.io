@@ -27,7 +27,7 @@
 </head>
 
 <body>
-<!-- Yandex.Metrika counter -->
+	<!-- Yandex.Metrika counter -->
 	<script>
 		(function(m, e, t, r, i, k, a) {
 			m[i] = m[i] || function() {
@@ -322,7 +322,7 @@
 		<p>Copyright @ 2022 Александр Терентьев. Design by Web</p>
 	</footer>
 	<!-- Button trigger modal -->
-	<button type="button" class="btn btn-primary launch_modal" data-bs-toggle="modal" data-bs-target="#exampleModal">
+	<button type="button" class="btn btn-primary launch_modal visually-hidden" data-bs-toggle="modal" data-bs-target="#exampleModal">
 		Launch demo modal
 	</button>
 
@@ -356,7 +356,7 @@
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
-							<button type="submit" class="btn btn-primary send-form"><span class="spinner-border spinner-border-sm visually-hidden" role="status" aria-hidden="true"></span>
+							<button type="submit" class="btn btn-primary"><span class="spinner-border spinner-border-sm visually-hidden" role="status" aria-hidden="true"></span>
 								Отправить
 							</button>
 						</div>
@@ -375,7 +375,7 @@
 	<script src="js/wow.min.js"></script>
 	<script src="js/jquery.maskedinput.min.js"></script>
 	<script src="js/jquery.inputmask.min.js"></script>
-	<script src="js/hueta.js"></script>
+	<script src="js/myScript.js"></script>
 
 </body>
 

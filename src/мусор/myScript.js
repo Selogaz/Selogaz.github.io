@@ -179,8 +179,8 @@ $(document).ready(function () {
 	});
 
 	setTimeout(function () {
-		$(".launch_modal").click();
-	}, 5000);
+	$(".launch_modal").click();
+}, 5000);
 	$("#inputTel").mask("+7(999) 999-9999");
 	$(".modal_form").submit(function (event) {
 		if ($("#inputTel").val() == "" || ($("#inputEmail").val() == "")) {
@@ -188,7 +188,6 @@ $(document).ready(function () {
 			alert("Заполните форму до конца");
 		}
 		$('.spinner-border-sm').removeClass('visually-hidden');
-		$('.send-form').prop('disabled', true);
 		event.preventDefault();
 		$.ajax({
 			type: "POST",
@@ -196,7 +195,6 @@ $(document).ready(function () {
 			data: $(this).serialize()
 		}).done(function () {
 			$('.spinner-border-sm').addClass('visually-hidden');
-			$('.send-form').prop('disabled', false);
 			$(this).find("input").val("");
 			alert("Успешно");
 			$(".modal_form").trigger("reset");
